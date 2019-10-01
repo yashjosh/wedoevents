@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>We Do Events</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+ <script src="main.js" ></script>
+</head>
+<body>
+	<header>
+		<div class="social_media">
+			<div class="container">
+				<div class="sc_media">
+					<ul>
+						<li><a href="https://www.facebook.com/yash.joshi27" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://www.instagram.com/y_shjoshi/" class="fa fa-instagram" target="_blank"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main_body">
+		<div class="banner_main">
+			<div class="container">
+				<div class="body_border">
+						<div class="banner">
+							<div class="main_navigation">
+								<ul>
+									<li><a href="Category.html">Categories</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Book an Event</a></li>
+									<li><a href="#">Upcoming Event</a></li>		
+								</ul>
+							</div>
+						</div>
+						<div class="book_event_wrapper">
+							<h1 class="heading"> Contact Us </h1>
+							<div class="event_form">
+							<form>
+					          <div class="form-group">
+					            <label for="contact-name">Full Name:  </label>
+					            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+					            <span class='error-message' id='name-error'></span>
+					          </div>
+
+					          <div class="form-group">
+					            <label for="contact-name">Title:  </label>
+					            <input type="text" class="form-control" id="contact-title" name="name"       placeholder="Enter Your Title.." onkeyup='validateName()'>
+					            <span class='error-message' id='name-error'></span>
+					          </div>
+
+					          <div class="form-group">
+					            <label for="contact-phone">Phone Number:  </label>
+					            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+					            <span class='error-message' id='phone-error'></span>
+					          </div>
+
+					          <div class="form-group">
+					            <label for="contact-email">Address:  </label>
+					            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Address" onkeyup='validateEmail()'>
+					            <span class='error-message' id='email-error'></span>
+					          </div>
+
+					          <div class="form-group">
+					            <label for="contact-email">Email address:  </label>
+					            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+					            <span class='error-message' id='email-error'></span>
+					          </div>   
+
+					          <div class="form-group">
+					            <label for='contactMessage'>Your Personal Requirements: </label>
+					            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+					            <span class='error-message' id='message-error'></span>
+					          </div>
+
+					        <button onclick='validateForm()' class="btn_submit">Submit</button>
+					        <span class='error-message' id='submit-error'></span>
+
+					      </form>
+					    </div>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer_block">
+			<div class="container">
+				<div class="footer_wrapper">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="tel:+12269888365">Contact: 226-988-8365</a></li>
+						<li><a href="mailto:yj27011995@gmail.com">Email: yj27011995@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="copyright_footer">
+					<p>Copyright &copy yash</p>
+				</div>
+			</div>
+	</footer>
+</body>
+</html>

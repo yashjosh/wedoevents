@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>We Do Events</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<header>
+		<div class="social_media">
+			<div class="container">
+				<div class="sc_media">
+					<ul>
+						<li><a href="https://www.facebook.com/yash.joshi27" class="fa fa-facebook" target="_blank"></a></li>
+						<li><a href="https://www.instagram.com/y_shjoshi/" class="fa fa-instagram" target="_blank"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main_body">
+		<div class="banner_main">
+			<div class="container">
+				<div class="body_border">
+						<div class="banner">
+							<div class="main_navigation">
+								<ul>
+									<li><a href="Category.html">Categories</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Book an Event</a></li>
+									<li><a href="#">Upcoming Event</a></li>		
+								</ul>
+							</div>
+						</div>
+						<div class="book_events">
+							<h1 class="heading"> Book an Event - PRICE ESTIMATOR</h1>
+							<form Name="myform">
+
+							    <p>Choose any One Choice from Decorations</p>
+							    <select NAME="memoryItem" onChange="calculatePrice()" id="memoryItem">
+
+							       <option value="50">Birthday Party Decoration: $50</option>
+							       <option value="100">Get to gather party: $100</option>
+							       <option value="200">Big event music: $200</option>
+							    </select>
+
+							    <p>Choose any One Choice from catering option</p>
+							    <select NAME="hddItem" onChange="calculatePrice()" id="hddItem">
+							    	
+							       <option value="1500">Mexican and Italian Dishes: $1500</option>
+							       <option value="750">Indian and Thai food: $750</option>
+							       <option value="1000">Punjabi tadka: $1000</option>
+							       <option value="500">Sushi Additional: $500</option>
+							    </select>
+
+							    <p>Choose any one option from Vine Options</p>
+							    <select NAME="networkItem" onChange="calculatePrice()" id="networkItem">
+							    	
+							       <option value="15">Small glass vine: $15</option>
+							       <option value="20">meidum glass vine: $20</option>
+							       <option value="25">Small glass White vine: $25</option>
+							    </select>
+							</form>
+							<p>Calculated price: </p>
+							<input type="text" id="PicExtPrice" Size=8></input>
+    					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer_block">
+			<div class="container">
+				<div class="footer_wrapper">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="tel:+12269888365">Contact: 226-988-8365</a></li>
+						<li><a href="mailto:yj27011995@gmail.com">Email: yj27011995@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="copyright_footer">
+					<p>Copyright &copy yash</p>
+				</div>
+			</div>
+	</footer>
+
+	<script type="text/javascript">
+		 function calculatePrice(){
+
+      //Get selected data  
+      var elt = document.getElementById("memoryItem");
+      var memory = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("hddItem");
+      var hdd = elt.options[elt.selectedIndex].value;
+
+      elt = document.getElementById("networkItem");
+      var network = elt.options[elt.selectedIndex].value;
+
+      //convert data to integers
+      memory = parseInt(memory);
+      hdd = parseInt(hdd);
+      network = parseInt(network);
+
+      //calculate total value  
+      var total = memory+hdd+network; 
+
+      //print value to  PicExtPrice 
+      document.getElementById("PicExtPrice").value=total;
+
+ 	}
+	</script>
+</body>
+</html>
